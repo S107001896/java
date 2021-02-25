@@ -1,0 +1,11 @@
+#java安裝
+
+#第一隻java程式
+  public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+     }
+}
+
+println()和print()有何差別?
