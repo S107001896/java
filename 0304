@@ -106,3 +106,18 @@ class circle
       System.out.println("Circle Surface Area is : " + surface area);
    }
 }
+
+package ex02;
+public class Ex02_03 {
+	public static void main(String[] args) {
+		final double basicRate = 1.2;
+		basicRate = 1.6;
+		System.out.println("一年期定存利率為 " + (basicRate + 0.1));
+		System.out.println("兩年期定存利率為 " + (basicRate + 0.2));
+	}
+}
+
+Ex02_03.java:5: error: cannot assign a value to final variable basicRate
+                basicRate = 1.6;
+                ^
+1 error
