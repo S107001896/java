@@ -42,4 +42,4 @@ public class Test{
 }
 
 java Test a b c
-a:b c
+b c
