@@ -32,7 +32,7 @@ package ex01;		//指定package 為ex01
 }
 
 
-#期中考未完成
+#期中考
 
 package ex03;
 import java.util.Scanner;
