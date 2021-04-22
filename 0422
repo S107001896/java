@@ -1,0 +1,18 @@
+費氏數列:遞迴方法 vs iterative
+
+(1)請使用靜態遞迴方法算出費氏數列。
+ public class MainClass {
+    public static void main(String[] args) {
+        for (int counter = 0; counter <= 10; counter++){
+            System.out.printf("Fibonacci of %d is: %d\n", counter, fibonacci(counter));
+        }
+    }
+ 
+    public static long fibonacci(long number) {
+        if ((number == 0) || (number == 1))
+            return number;
+        else
+            return fibonacci(number - 1) + fibonacci(number - 2);
+    }
+}
+(2)請使用 iterative方法算出費氏數列。
