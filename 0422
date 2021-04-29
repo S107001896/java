@@ -17,6 +17,19 @@
             return fibonacci(number - 1) + fibonacci(number - 2);
     }
 }
+
+Fibonacci of 0 is: 0
+Fibonacci of 1 is: 1
+Fibonacci of 2 is: 1
+Fibonacci of 3 is: 2
+Fibonacci of 4 is: 3
+Fibonacci of 5 is: 5
+Fibonacci of 6 is: 8
+Fibonacci of 7 is: 13
+Fibonacci of 8 is: 21
+Fibonacci of 9 is: 34
+Fibonacci of 10 is: 55
+
 (2)請使用 iterative方法算出費氏數列。
 public class Interation {
 	public void InteratArr(int alength,int arrZero,int arrOne) {
@@ -37,6 +50,8 @@ public class Interation {
 	}
 }
 
+0 1 1 2 3 
+
 傳值呼叫(call by value)
 
 public class CallByVal {
@@ -56,6 +71,10 @@ public class CallByVal {
 	}
 }
 
+ 傳值呼叫前	a=10	b=15
+ 傳值呼叫中	x=15	y=10
+ 傳值呼叫後	a=10	b=15
+ 
 參考呼叫(call by reference)
 
 class Obj {
@@ -83,6 +102,9 @@ public class CallByRef {
 	}
 }
 
+ 參考呼叫前	 a = 10	b = 15
+ 參考呼叫後	 a = 15	b = 10
+
 方法多載
 
 public class AddNum {
@@ -101,3 +123,6 @@ public class AddNum {
 		return a + b + c; // 傳回三個倍精確度相加的結果
 	}
 }
+
+45
+41.600000
