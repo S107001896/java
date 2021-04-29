@@ -53,7 +53,7 @@ public class Interation {
 0 1 1 2 3 
 
 傳值呼叫(call by value)
-基本資料型別的變數存放在儲存空間，呼叫敘述的實引數與被呼叫方法的的虛引數是分別占用不同記憶體
+虛引數為基本資料型別，基本資料型別的變數存放在Stack堆疊儲存空間，呼叫敘述的實引數與被呼叫方法的的虛引數是分別占用不同記憶體
 public class CallByVal {
 	public static void main(String[] args) {
 		int a = 10, b = 15;
@@ -76,7 +76,7 @@ public class CallByVal {
  傳值呼叫後	a=10	b=15
  
 參考呼叫(call by reference)
-呼叫敘述的實引數與被呼叫方法的的虛引數是占用同一記憶體
+虛引數為參考資料型別，呼叫敘述的實引數與被呼叫方法的的虛引數是占用同一記憶體
 class Obj {
 	int a, b;
 
@@ -107,6 +107,12 @@ public class CallByRef {
 
 方法多載
 同一個類別中，允許方法使用相同的名稱，必須是資料型別不同、個數或順序不同
+void methed(){}
+int methed(){} //不能多載:傳回值不同但引數個數相同
+void methed(int a){} //成功多載:比第1行的方法多一個引數
+void methed(int b){} //不能多載:引數名稱不同，但和第3行的型別和個數相同
+void methed(String s){} //成功多載:第3行引數個數相同型別但型別不同
+
 public class AddNum {
 	public static void main(String[] args) {
 		int total1, x=17, y=28;
