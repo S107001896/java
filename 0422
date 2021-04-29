@@ -53,7 +53,7 @@ public class Interation {
 0 1 1 2 3 
 
 傳值呼叫(call by value)
-
+基本資料型別的變數存放在儲存空間，呼叫敘述的實引數與被呼叫方法的的虛引數是分別占用不同記憶體
 public class CallByVal {
 	public static void main(String[] args) {
 		int a = 10, b = 15;
@@ -76,7 +76,7 @@ public class CallByVal {
  傳值呼叫後	a=10	b=15
  
 參考呼叫(call by reference)
-
+呼叫敘述的實引數與被呼叫方法的的虛引數是占用同一記憶體
 class Obj {
 	int a, b;
 
@@ -106,7 +106,7 @@ public class CallByRef {
  參考呼叫後	 a = 15	b = 10
 
 方法多載
-
+同一個類別中，允許方法使用相同的名稱，必須是資料型別不同、個數或順序不同
 public class AddNum {
 	public static void main(String[] args) {
 		int total1, x=17, y=28;
