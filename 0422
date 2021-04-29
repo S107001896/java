@@ -85,8 +85,6 @@ public class CallByRef {
 
 方法多載
 
-package ex05;
-
 public class AddNum {
 	public static void main(String[] args) {
 		int total1, x=17, y=28;
