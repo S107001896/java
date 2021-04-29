@@ -53,7 +53,7 @@ public class Interation {
 0 1 1 2 3 
 
 傳值呼叫(call by value)
-虛引數為基本資料型別，基本資料型別的變數存放在Stack堆疊儲存空間，呼叫敘述的實引數與被呼叫方法的的虛引數是分別占用不同記憶體
+虛引數為基本資料型別，基本資料型別的變數存放在Stack堆疊儲存空間，呼叫敘述的實引數與被呼叫方法的虛引數是分別占用不同記憶體
 public class CallByVal {
 	public static void main(String[] args) {
 		int a = 10, b = 15;
